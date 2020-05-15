@@ -1,11 +1,11 @@
 # GetProductDtoRelatedProducts
-
+Products related with a product
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** |  | [optional] 
-**id** | **str** |  | [optional] 
-**slug** | **str** |  | [optional] 
+**name** | **str** | Related product name | [optional] 
+**id** | **str** | Related product id | [optional] 
+**slug** | **str** |  Related product url path identifier| [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

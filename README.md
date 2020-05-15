@@ -7,7 +7,7 @@ Headless CMS API used by the Open:FactSet Marketplace.
 
 ## Requirements.
 
-Python 2.7 and 3.4+
+Python 3.7+
 
 ## Installation & Usage
 ### Setuptools
@@ -126,5 +126,18 @@ Class | Method | HTTP request | Description
 
 
 ## Basic
+- **Type**: HTTP basic authentication.
 
-- **Type**: HTTP basic authentication
+FactSet Research Systems Inc. provides access to Analytics and content through RESTful APIs. 
+To ensure the integrity and confidentiality of this data,
+FactSet leverages API Keys using Basic HTTP Authentication Scheme described in 
+[RFC 7617](https://tools.ietf.org/html/rfc7617.html).
+- **Username**: Register with FactSet to obtain FactSet Username and Serial.
+- **Password**: Generate the API key using the Developer Portal.
+
+- **Example**: 
+Connect with HTTP basic authentication with username-serial as username and API key as the password.
+```python
+configuration.username = 'USERNAME-SERIAL'
+configuration.password = 'API-KEY'
+```
